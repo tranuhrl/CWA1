@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collage Web App</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <script src="main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <center>
+        <h1>
+            Collage Web App
+        </h1>
+        <hr>
+        <h4>As soon as the popup appears, please click "Allow" after you've spoken a command</h4>
+        <br>
+        <hr>
+        <h3>Say "Selfie" to take a selfie and make a collage</h3>
+        <br>
+        <button onclick = "save();" class = "btn btn-danger" style = "scale:200%">Start</button>
+        <br>
+        <br>
+        <br>
+        <h4>Press the <button class = "btn btn-danger" id = "button_demo" style = "scale:90%">Start</button> Button</h4> 
+        <hr>
+        <label>Your webcam:</label>
+        <hr>
+        <div id = "camera"></div>
+        <hr></hr>
+        <br>
+        <label>All selfies will be displayed here</label>
+        <hr>
+        <div id = "resultShow">
+            <div id = "result1">
+                <img src = "camera.jpg" style = "width:30%;">
+            </div>
+            <div id = "result2">
+                <img src = "selfie1.jpg" style = "width:30%;">
+            </div>
+            <div id = "result3">
+                <img src = "selfie2.jpg" style = "width:30%;">
+            </div>
+        </div>
+    </center>
+</body>
+</html>
